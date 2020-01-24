@@ -1,0 +1,132 @@
+{
+  // Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Print to console": {
+    "prefix": "log",
+    "body": [
+      "std::cout << \"$1\" << std::endl;",
+    ],
+    "description": "Log output to console"
+  },
+  "Debug": {
+    "prefix": "dbg",
+    "body": [
+      "std::cout << \"$1: \" << $1 << std::endl;",
+    ],
+    "description": "Debug variable"
+  },
+  "Debug2": {
+    "prefix": "dbg2",
+    "body": [
+      "std::cout << \"$1: \" << $1 << \", $2: \" << $2 << std::endl;",
+    ],
+    "description": "Debug variable"
+  },
+  "Debug3": {
+    "prefix": "dbg3",
+    "body": [
+      "std::cout << \"$1: \" << $1 << \", $2: \" << $2 << \", $3: \" << $3 << std::endl;",
+    ],
+    "description": "Debug variable"
+  },
+  "Print Sep": {
+    "prefix": "psep",
+    "body": [
+      "std::cout << \"------------------------------------------\" << std::endl;",
+    ],
+    "description": "Print Seperator"
+  },
+  "Sep": {
+    "prefix": "sep",
+    "body": [
+      "//-----------------------------------------------------",
+    ],
+    "description": a
+  },
+  "head": {
+    "prefix": "head",
+    "body": [
+      "#include \"head.hpp\"",
+      "",
+    ],
+    "description": "header"
+  },
+  "head2": {
+    "prefix": "head2",
+    "body": [
+      "#include <algorithm>",
+      "#include <iostream>"
+			"#include <map>",
+      "#include <queue>",
+      "#include <list>",
+      "#include <stdio.h>",
+      "#include <string>",
+      "#include <vector>",
+      "#include <stack>",
+      "#include <cmath>",
+      "#include <deque>",
+      "#include <unordered_map>",
+      "#include <unordered_set>",
+      "using namespace std;",
+      "//-----------------------------------------------------",
+      "template <class T>",
+      "void print(vector<T> input) {",
+      "std::cout << \"{ \";",
+      "for (auto n : input) {",
+      "  std::cout << n << \", \";",
+      "}",
+      "std::cout << \" }\" << std::endl;",
+      "}",
+      "//-----------------------------------------------------",
+      "template <class T>",
+      "void swap(T& a, T&b) {",
+      "T temp = a;",
+      "a = b;",
+      "b = temp;",
+      "}",
+      "//-----------------------------------------------------",
+    ],
+    "description": "Separator"
+  },
+  "main": {
+    "prefix": "mn",
+    "body": [
+      "//-----------------------------------------------------",
+      "int main() {",
+      "Solution s;",
+      "// vector<int> input = { 0, 1, 0 };",
+      "// for (auto n : input) {",
+      "//     std::cout << n << \", \";",
+      "// }",
+      "// std::cout << std::endl;",
+      "return 0;",
+      "}",
+      "//-----------------------------------------------------"
+    ],
+    "description": "Main"
+  },
+  "main2": {
+    "prefix": "mn2",
+    "body": [
+      "//-----------------------------------------------------",
+      "int main() {",
+      "Solution s;",
+      "int r;",
+      "vector<int> input;",
+      "return 0;",
+      "}",
+    ],
+    "description": "Main"
+  },
+}
